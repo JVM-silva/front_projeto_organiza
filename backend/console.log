@@ -1,0 +1,14 @@
+app.post('/users', (req, res) => {
+  const { email, password } = req.body;
+  console.log('Dados recebidos:', req.body); // Verifica os dados recebidos
+
+  if (!email || !password) {
+    return res.status(400).json({ error: 'Email e senha são obrigatórios' });
+  }
+
+  const newUser = { email, password };
+  users.push(newUser);
+
+  console.log('Usuário adicionado:', newUser); // Verifica se o usuário está sendo adicionado
+  res.status(201).json(newUser);
+});
