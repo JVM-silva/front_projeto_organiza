@@ -1,0 +1,66 @@
+/* Estilo Geral */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    padding-top: 20px;
+}
+
+/* Cabeçalhos */
+h1, h2 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Formulário de Notificações */
+#notificationForm {
+    margin-bottom: 30px;
+}
+
+#notificationForm .form-group {
+    margin-bottom: 15px;
+}
+
+#notificationForm label {
+    font-weight: bold;
+}
+
+#notificationForm input,
+#notificationForm select {
+    width: 100%;
+}
+
+/* Lista de Notificações */
+.list-group-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.list-group-item button {
+    margin-left: 10px;
+}
+
+/* Alertas de Notificação */
+.alert {
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+.alert-success {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.alert-warning {
+    background-color: #fff3cd;
+    color: #856404;
+}
+
+.alert-danger {
+    background-color: #f8d7da;
+    color: #721c24;
+}

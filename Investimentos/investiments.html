@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organiza - Investimentos</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="investiments.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1>Investimentos</h1>
+        <div class="row">
+            <div class="col-md-6">
+                <h3>Adicionar Investimento</h3>
+                <form id="investmentForm">
+                    <div class="form-group">
+                        <label for="investmentType">Tipo de Investimento</label>
+                        <input type="text" class="form-control" id="investmentType" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="investmentValue">Valor Inicial</label>
+                        <input type="number" class="form-control" id="investmentValue" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="institution">Instituição</label>
+                        <input type="text" class="form-control" id="institution" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Adicionar</button>
+                </form>
+                <h3 class="mt-4">Investimentos</h3>
+                <ul id="investmentList" class="list-group">
+                    <!-- Investimentos serão adicionados aqui -->
+                </ul>
+            </div>
+            <div class="col-md-6">
+                <h3>Gráfico de Investimentos</h3>
+                <canvas id="investmentChart"></canvas>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="investments.js"></script>
+</body>
+</html>

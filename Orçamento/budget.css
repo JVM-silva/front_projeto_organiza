@@ -1,0 +1,86 @@
+/* Estilo Geral */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    padding-top: 20px;
+}
+
+/* Cabeçalhos */
+h1, h2, h3 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Formulário de Orçamento */
+#budgetForm {
+    margin-bottom: 30px;
+}
+
+#budgetForm .form-group {
+    margin-bottom: 15px;
+}
+
+#budgetForm label {
+    font-weight: bold;
+}
+
+#budgetForm input,
+#budgetForm select {
+    width: 100%;
+}
+
+/* Tabela de Orçamento */
+.table-container {
+    margin-top: 20px;
+}
+
+.table-container table {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.table-container table th {
+    background-color: #f8f9fa;
+}
+
+.table-container table td {
+    text-align: center;
+}
+
+.table-container table .btn {
+    margin: 0 5px;
+}
+
+/* Gráfico de Orçamento */
+.canvas-container {
+    margin-top: 20px;
+}
+
+#budgetChart {
+    height: 400px;
+}
+
+/* Alertas de Orçamento */
+.alert {
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+.alert-success {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.alert-warning {
+    background-color: #fff3cd;
+    color: #856404;
+}
+
+.alert-danger {
+    background-color: #f8d7da;
+    color: #721c24;
+}

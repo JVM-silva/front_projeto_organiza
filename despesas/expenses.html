@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organiza - Receitas e Despesas</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="expenses.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1>Receitas e Despesas</h1>
+        <div class="row">
+            <div class="col-md-6">
+                <h3>Adicionar Receita/Despesa</h3>
+                <form id="expenseForm">
+                    <div class="form-group">
+                        <label for="type">Tipo</label>
+                        <select class="form-control" id="type" required>
+                            <option value="income">Receita</option>
+                            <option value="expense">Despesa</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="amount">Valor</label>
+                        <input type="number" class="form-control" id="amount" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="description">Descrição</label>
+                        <input type="text" class="form-control" id="description" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Adicionar</button>
+                </form>
+                <h3 class="mt-4">Histórico de Receitas/Despesas</h3>
+                <ul id="expenseList" class="list-group">
+                    <!-- Itens serão adicionados aqui -->
+                </ul>
+            </div>
+            <div class="col-md-6">
+                <h3>Gráfico de Despesas</h3>
+                <div class="canvas-container">
+                    <canvas id="expenseChart"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="js/expenses.js"></script>
+</body>
+</html>
